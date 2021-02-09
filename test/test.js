@@ -2,7 +2,7 @@ const test = require('ava');
 
 const {
   mapPractice, mapPractice2, filterPractice, filterPractice2, reducePractice, reducePractice2 
-} = require('../index-solutions');
+} = require('..');
 
 test('mapPractice', (t) => {
   t.deepEqual(mapPractice([1,2,3]), [2,4,6]);
