@@ -1,0 +1,57 @@
+{
+  "name": "codelou-lesson1",
+  "description": "A lesson and practice on map/filter/reduce",
+  "version": "1.0.0",
+  "author": "Brad Cypert <brad.cypert@gmail.com> (https://www.bradcypert.com)",
+  "bugs": {
+    "url": "https://github.com/bradcypert/codelou-lesson1/issues",
+    "email": "brad.cypert@gmail.com"
+  },
+  "contributors": [
+    "Brad Cypert <brad.cypert@gmail.com> (https://www.bradcypert.com)"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "ava": "latest",
+    "codecov": "latest",
+    "cross-env": "latest",
+    "eslint": "latest",
+    "eslint-config-xo-lass": "latest",
+    "fixpack": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "nyc": "latest",
+    "remark-cli": "latest",
+    "remark-preset-github": "latest",
+    "xo": "latest"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "homepage": "https://github.com/bradcypert/codelou-lesson1",
+  "keywords": [
+    "codelou-lesson1",
+    "lass"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bradcypert/codelou-lesson1"
+  },
+  "scripts": {
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "test": "cross-env NODE_ENV=test ava",
+    "test-coverage": "cross-env NODE_ENV=test nyc npm run test"
+  },
+  "xo": {
+    "prettier": true,
+    "space": true,
+    "extends": [
+      "xo-lass"
+    ]
+  }
+}
